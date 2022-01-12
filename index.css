@@ -1,0 +1,58 @@
+.clock {
+    position: relative;
+    height: 85px;
+    width: 300px;
+    /* animation: animate 1.5s linear infinite; */
+    border-radius: 7px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.4));
+    background: linear-gradient( 45deg, #1f5558, red, #161656, #ff00ff, blue, pink);
+}
+
+.clock-2 {
+    position: relative;
+    height: 85px;
+    width: 300px;
+    animation: animate 1.5s linear infinite;
+    border-radius: 7px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.4));
+    background: linear-gradient( 45deg, #1f5558, red, #161656, #ff00ff, blue, pink);
+}
+
+.clock-1 {
+    background-color: #161656;
+    height: 75px;
+    width: 280px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    border-radius: 5px;
+}
+
+.clock-1 p {
+    font-size: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: linear-gradient( 45deg, #9bcd9b, #ffa500, red, #7fde25, #ff9eea, #c3c595, green, lightblue, pink);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    position: absolute;
+    top: -42px;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+span {
+    height: 30px;
+    width: 240px;
+    background-color: red;
+    border: 30px solid springgreen;
+    filter: blur(20px);
+    z-index: -10;
+    position: absolute;
+}
