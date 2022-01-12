@@ -8,6 +8,15 @@
     background: linear-gradient( 45deg, #1f5558, red, #161656, #ff00ff, blue, pink);
 }
 
+@font-face {
+    font-family: fa;
+    src: url(./Technology-Bold.ttf);
+}
+
+html {
+    font-family: fa;
+}
+
 .clock-2 {
     position: relative;
     height: 85px;
@@ -29,7 +38,7 @@
 }
 
 .clock-1 p {
-    font-size: 50px;
+    font-size: 68px;
     padding-right: 10px;
     padding-left: 10px;
     background: linear-gradient( 45deg, #9bcd9b, #ffa500, red, #7fde25, #ff9eea, #c3c595, green, lightblue, pink);
@@ -37,7 +46,7 @@
     color: transparent;
     -webkit-background-clip: text;
     position: absolute;
-    top: -42px;
+    top: -65px;
     animation: animate 1.5s linear infinite;
 }
 
